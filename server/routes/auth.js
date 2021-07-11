@@ -23,7 +23,7 @@ router.post('/login', (req, res, next) => {
     User.findByCredential(credential, password, webtoken.generate, req.query.askRegen)
         //Cookie's option 'secure' is set to false because this server isn't using https connexion.
         //For better security, we should enabled this option and use https protocol.
-        .then((data) => res.status(200).cookie('authorization', data.token, { secure: false, httpOnly: true }).json(data.user))
+        .then((data) => res.status(200).cookie('authorization', data.token, { secure: true, httpOnly: true }).json(data.user))
         .catch(next)
 })
 
