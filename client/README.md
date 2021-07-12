@@ -12,3 +12,5 @@ For getting a quick preview of how this project looks like, just run `npm run se
 ### Requirements
 Before getting into live server, you'll need to start backend server AND MongoDB instance.
 Check out the README for the backend part in the appropriated folder.
+
+⚠ Note that for now, I didn't develop responsive for now, but I will certainly work on it within a few weeks
