@@ -149,10 +149,7 @@ const router = createRouter({
         {
           path: "status/:post",
           name: "Discussion",
-          component: Post,
-          meta: {
-            tweet: 'Reply'
-          }
+          component: Post
         },
         /* Tweets URL */
         {
@@ -169,15 +166,6 @@ const router = createRouter({
           name: "Follows",
           components: {
             default: FollowsView,
-            popup: TweetCompose
-          },
-          props: true
-        },
-        {
-          path: "/tweet",
-          name: "Reply",
-          components: {
-            default: Post,
             popup: TweetCompose
           },
           props: true
